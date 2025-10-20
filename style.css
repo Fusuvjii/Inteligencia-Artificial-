@@ -3,12 +3,67 @@
 --cor-principal: #FFFFFF; 
 --cor-secundária: #A98E64;
 --cor-destaque: #4A6E55;
---cor-texto: #1e1e1e
+--cor-texto: #1e1e1e;
+--cor-texto: #1D2D3E;
+--cor-texto-secundario: #5A7184;
 
 }
 
 Body{
-    background-color: var(--cor-fundo)
-    -
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding: 40px 0;
 
 }
+
+.caixa-principal {
+background-color: var(--cor-principal);
+width: 95%;
+max-width: 800px;
+padding: 40px;
+box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+border-radius: 8px;
+}
+
+h1 {
+    color: var(--cor-destaque);
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+    border-bottom: 2px solid var(--cor-secundaria);
+    padding-bottom: 10px;
+    text-align: left;
+    }
+
+    button {
+        background-color: var(--cor-destaque);
+        color: var(--cor-principal);
+        border: none;
+        border-radius: 5px;
+        padding: 12px 25px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background-color 0.3s, transform 0.1s;
+        }
+
+        button:hover {
+            background-color: #295F95;
+            transform: translateY(-2px);
+            }
+
+            a {
+                color: var(--cor-destaque);
+                text-decoration: none;
+                transition: color 0.3s;
+                }
+
+                a:hover {
+                    color: var(--cor-texto);
+                    text-decoration: underline;
+                    }
